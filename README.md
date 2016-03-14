@@ -14,5 +14,7 @@ A .NET library for easily populating your repository with your bespoke labels
 		<td><a href="https://ci.appveyor.com/project/baynezy/githublabelinitialiser"><img src="https://ci.appveyor.com/api/projects/status/46a5yy16oaa4eoyf/branch/develop?svg=true" alt="develop" title="develop" /></a></td>
     </tr>
 </table>
+## Documentation
+Fully navigable documentation available on [GitHub Pages](http://baynezy.github.io/GitHubLabelInitialiser/)
 ## License
 This project is licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
