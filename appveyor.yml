@@ -11,5 +11,5 @@ environment:
 install:
   - choco install doxygen.portable
 after_test:
-  - ps: C:/ProgramData/chocolatey/lib/doxygen.portable/tools/doxygen.exe doxygen.config
+  - ps: C:/ProgramData/chocolatey/lib/doxygen.portable/tools/doxygen.exe
   - ps: ./pushDocumentation.ps1 $env:APPVEYOR_BUILD_FOLDER $env:GithubEmail $env:GithubUsername $env:GithubPersonalAccessToken $env:appveyor_repo_branch
