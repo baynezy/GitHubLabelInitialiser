@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GitHubApi.cs" />
     <Compile Include="GitHubLabel.cs" />
     <Compile Include="IGitHubApi.cs" />
     <Compile Include="ILabelManager.cs" />
