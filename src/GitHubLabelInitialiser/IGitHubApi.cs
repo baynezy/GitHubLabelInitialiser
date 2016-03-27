@@ -6,6 +6,6 @@ namespace GitHubLabelInitialiser
 	public interface IGitHubApi
 	{
 		Task<IList<GitHubLabel>> GetAllForRepository(string repositoryName);
-		Task<GitHubLabel> DeleteLabel(GitHubLabel isAny);
+		Task<GitHubLabel> DeleteLabel(GitHubLabel label);
 	}
 }

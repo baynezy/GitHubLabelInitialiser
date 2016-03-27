@@ -1,7 +1,10 @@
-﻿namespace GitHubLabelInitialiser
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace GitHubLabelInitialiser
 {
 	public interface ILabelManager
 	{
-		void DeleteAllInRepository(string repositoryName);
+		Task<IList<GitHubLabel>> DeleteAllInRepository(string repositoryName);
 	}
 }

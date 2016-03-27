@@ -1,4 +1,7 @@
-﻿namespace GitHubLabelInitialiser
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace GitHubLabelInitialiser
 {
 	public class LabelManager : ILabelManager
 	{
@@ -9,7 +12,7 @@
 			_gitHubApi = gitHubApi;
 		}
 
-		public async void DeleteAllInRepository(string repositoryName)
+		public async Task<IList<GitHubLabel>> DeleteAllInRepository(string repositoryName)
 		{
 			var labels = _gitHubApi.GetAllForRepository(repositoryName);
 
@@ -17,6 +20,8 @@
 			{
 				await _gitHubApi.DeleteLabel(label);
 			}
+
+			return await labels;
 		}
 	}
 }
