@@ -7,5 +7,6 @@ namespace GitHubLabelInitialiser
 	{
 		Task<IList<GitHubLabel>> GetAllForRepository(string username, string repositoryName);
 		Task<GitHubLabel> DeleteLabel(string username, string repositoryName, GitHubLabel label);
+		Task<GitHubLabel> AddLabel(string username, string repositoryName, GitHubLabel label);
 	}
 }

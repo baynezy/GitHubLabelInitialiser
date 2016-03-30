@@ -27,5 +27,22 @@ namespace GitHubLabelInitialiser
 
 			return labels;
 		}
+
+		#pragma warning disable 1998
+		public async Task<IList<GitHubLabel>> AddLabelsToRepository(string username, string repositoryName, List<GitHubLabel> labels)
+		#pragma warning restore 1998
+		{
+			var tasks = new Task[labels.Count];
+			var count = 0;
+
+			foreach (var label in labels)
+			{
+				tasks[count++] = _gitHubApi.AddLabel(username, repositoryName, label);
+			}
+
+			Task.WaitAll(tasks);
+
+			return labels;
+		}
 	}
 }

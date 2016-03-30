@@ -30,5 +30,17 @@ namespace GitHubLabelInitialiser
 
 			return label;
 		}
+
+		public async Task<GitHubLabel> AddLabel(string username, string repositoryName, GitHubLabel label)
+		{
+			await _client.Issue.Labels.Create(username, repositoryName, CreateLabel(label));
+
+			return label;
+		}
+
+		private static NewLabel CreateLabel(GitHubLabel label)
+		{
+			return new NewLabel(label.Name, label.Color);
+		}
 	}
 }
