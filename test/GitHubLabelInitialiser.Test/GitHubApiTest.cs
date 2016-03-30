@@ -13,9 +13,24 @@ namespace GitHubLabelInitialiser.Test
 			Assert.That(api, Is.InstanceOf<IGitHubApi>());
 		}
 
-		private static IGitHubApi CreateApi()
+		private static IGitHubApi CreateApi(IGitHubCredentials gitHubCredentials = null, string appName = "my-cool-app")
 		{
-			return new GitHubApi();
+			IGitHubCredentials credentials;
+
+			if (gitHubCredentials == null)
+			{
+				credentials = new GitHubCredentials
+					{
+						Login = "login",
+						Password = "password"
+					};
+			}
+			else
+			{
+				credentials = gitHubCredentials;
+			}
+
+			return new GitHubApi(credentials, appName);
 		}
 	}
 }

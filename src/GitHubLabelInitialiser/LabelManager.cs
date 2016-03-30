@@ -12,16 +12,20 @@ namespace GitHubLabelInitialiser
 			_gitHubApi = gitHubApi;
 		}
 
-		public async Task<IList<GitHubLabel>> DeleteAllInRepository(string repositoryName)
+		public async Task<IList<GitHubLabel>> DeleteAllInRepository(string username, string repositoryName)
 		{
-			var labels = _gitHubApi.GetAllForRepository(repositoryName);
+			var labels = await _gitHubApi.GetAllForRepository(username, repositoryName);
+			var tasks = new Task[labels.Count];
+			var count = 0;
 
-			foreach (var label in await labels)
+			foreach (var label in labels)
 			{
-				await _gitHubApi.DeleteLabel(label);
+				tasks[count++] = _gitHubApi.DeleteLabel(username, repositoryName, label);
 			}
 
-			return await labels;
+			Task.WaitAll(tasks);
+
+			return labels;
 		}
 	}
 }

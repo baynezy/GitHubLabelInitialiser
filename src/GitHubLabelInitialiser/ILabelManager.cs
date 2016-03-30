@@ -5,6 +5,6 @@ namespace GitHubLabelInitialiser
 {
 	public interface ILabelManager
 	{
-		Task<IList<GitHubLabel>> DeleteAllInRepository(string repositoryName);
+		Task<IList<GitHubLabel>> DeleteAllInRepository(string username, string repositoryName);
 	}
 }

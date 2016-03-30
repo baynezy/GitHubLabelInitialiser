@@ -18,31 +18,33 @@ namespace GitHubLabelInitialiser.Test
 		[Test]
 		public void DeleteAllInRepository_WhenCalled_ThenShouldCallIGitHubApiGetAllForRepository()
 		{
+			const string username = "baynezy";
 			const string repositoryName = "my-repo";
 			var api = new Mock<IGitHubApi>();
-			api.Setup(m => m.GetAllForRepository(repositoryName));
+			api.Setup(m => m.GetAllForRepository(username, repositoryName));
 			var manager = CreateManager(api.Object);
 
-			manager.DeleteAllInRepository(repositoryName);
+			manager.DeleteAllInRepository(username, repositoryName);
 
-			api.Verify(f => f.GetAllForRepository(repositoryName), Times.Once());
+			api.Verify(f => f.GetAllForRepository(username, repositoryName), Times.Once());
 		}
 
 		[Test]
 		public void DeleteAllInRepository_WhenCalled_ThenShouldCallIGitHubApiDeleteLabelAsManyTimesAsLabelsPresent()
 		{
+			const string username = "baynezy";
 			const string repositoryName = "my-repo";
 			var api = new Mock<IGitHubApi>();
-			api.Setup(m => m.GetAllForRepository(repositoryName)).ReturnsAsync(new List<GitHubLabel>
+			api.Setup(m => m.GetAllForRepository(username, repositoryName)).ReturnsAsync(new List<GitHubLabel>
 				{
 					new GitHubLabel(),
 					new GitHubLabel()
 				});
 			var manager = CreateManager(api.Object);
 
-			manager.DeleteAllInRepository(repositoryName);
+			manager.DeleteAllInRepository(username, repositoryName);
 
-			api.Verify(f => f.DeleteLabel(It.IsAny<GitHubLabel>()), Times.Exactly(2));
+			api.Verify(f => f.DeleteLabel(username, repositoryName, It.IsAny<GitHubLabel>()), Times.Exactly(2));
 		}
 
 		private static ILabelManager CreateManager(IGitHubApi gitHubApi = null)
