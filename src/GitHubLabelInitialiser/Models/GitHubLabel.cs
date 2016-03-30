@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GitHubLabelInitialiser
+namespace GitHubLabelInitialiser.Models
 {
 	/// <summary>
 	/// GitHub Issue Label

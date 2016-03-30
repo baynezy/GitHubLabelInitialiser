@@ -1,8 +1,10 @@
-﻿using System;
+using System;
+using GitHubLabelInitialiser.Extensions;
+using GitHubLabelInitialiser.Models;
 using NUnit.Framework;
 using Octokit;
 
-namespace GitHubLabelInitialiser.Test
+namespace GitHubLabelInitialiser.Test.Extensions
 {
 	[TestFixture]
 	class ConvertToGitHubLabelExtensionTest

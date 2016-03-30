@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GitHubLabelInitialiser.Models;
 using Moq;
 using NUnit.Framework;
 

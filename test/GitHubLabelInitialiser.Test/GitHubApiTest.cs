@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using GitHubLabelInitialiser.Models;
+using NUnit.Framework;
 
 namespace GitHubLabelInitialiser.Test
 {

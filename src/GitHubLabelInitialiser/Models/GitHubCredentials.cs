@@ -1,4 +1,4 @@
-﻿namespace GitHubLabelInitialiser
+﻿namespace GitHubLabelInitialiser.Models
 {
 	/// <summary>
 	/// Credentials object to access GitHub API

@@ -46,12 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConvertToGitHubLabelExtension.cs" />
+    <Compile Include="Extensions\ConvertToGitHubLabelExtension.cs" />
     <Compile Include="GitHubApi.cs" />
-    <Compile Include="GitHubCredentials.cs" />
-    <Compile Include="GitHubLabel.cs" />
+    <Compile Include="Models\GitHubCredentials.cs" />
+    <Compile Include="Models\GitHubLabel.cs" />
     <Compile Include="IGitHubApi.cs" />
-    <Compile Include="IGitHubCredentials.cs" />
+    <Compile Include="Models\IGitHubCredentials.cs" />
     <Compile Include="ILabelManager.cs" />
     <Compile Include="LabelManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

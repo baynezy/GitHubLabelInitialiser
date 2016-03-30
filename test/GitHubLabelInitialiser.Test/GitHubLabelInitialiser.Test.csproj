@@ -54,8 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\ConvertToGitHubLabelExtensionTest.cs" />
     <Compile Include="GitHubApiTest.cs" />
-    <Compile Include="ConvertToGitHubLabelExtensionTest.cs" />
     <Compile Include="LabelManagerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,6 +1,7 @@
-﻿using Octokit;
+using GitHubLabelInitialiser.Models;
+using Octokit;
 
-namespace GitHubLabelInitialiser
+namespace GitHubLabelInitialiser.Extensions
 {
 	public static class ConvertToGitHubLabelExtension
 	{

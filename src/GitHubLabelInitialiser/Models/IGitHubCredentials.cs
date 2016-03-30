@@ -1,4 +1,4 @@
-﻿namespace GitHubLabelInitialiser
+﻿namespace GitHubLabelInitialiser.Models
 {
 	public interface IGitHubCredentials
 	{
