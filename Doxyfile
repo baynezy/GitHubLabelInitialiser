@@ -1,0 +1,13 @@
+DOXYFILE_ENCODING		= UTF-8
+PROJECT_NAME			= "GitHub Label Initialiser"
+PROJECT_BRIEF			= ".NET Library to help initialise your GitHub repository with labels the way you want."
+OUTPUT_DIRECTORY		= ../documentation
+OUTPUT_LANGUAGE			= English
+EXTRACT_ALL				= YES
+INPUT					= src/GitHubLabelInitialiser DOCUMENTATION.md
+INPUT_ENCODING			= UTF-8
+FILE_PATTERNS			= *.cs
+RECURSIVE				= YES
+USE_MDFILE_AS_MAINPAGE	= DOCUMENTATION.md
+GENERATE_LATEX			= NO
+EXCLUDE_PATTERNS		= */obj/* */bin/*
