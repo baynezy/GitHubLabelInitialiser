@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 
 namespace GitHubLabelInitialiser
 {
+	/// <summary>
+	/// The concrete implementation of ILabelManager
+	/// </summary>
 	public class LabelManager : ILabelManager
 	{
 		private readonly IGitHubApi _gitHubApi;

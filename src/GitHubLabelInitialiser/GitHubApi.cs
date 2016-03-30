@@ -5,10 +5,18 @@ using Octokit;
 
 namespace GitHubLabelInitialiser
 {
+	/// <summary>
+	/// Concrete implementation of IGitHubApi
+	/// </summary>
 	public class GitHubApi : IGitHubApi
 	{
 		private readonly GitHubClient _client;
 
+		/// <summary>
+		/// New instance of GitHubApi
+		/// </summary>
+		/// <param name="gitHubCredentials">The IGitHubCredentials that are being used to authenticate with GitHub</param>
+		/// <param name="appName">The name of your specific app</param>
 		public GitHubApi(IGitHubCredentials gitHubCredentials, string appName)
 		{
 			_client = new GitHubClient(new ProductHeaderValue(appName))
