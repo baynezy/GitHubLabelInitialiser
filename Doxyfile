@@ -10,4 +10,4 @@ FILE_PATTERNS			= *.cs
 RECURSIVE				= YES
 USE_MDFILE_AS_MAINPAGE	= DOCUMENTATION.md
 GENERATE_LATEX			= NO
-EXCLUDE_PATTERNS		= */obj/* */bin/*
+EXCLUDE_PATTERNS		= */obj/* */bin/* */AssemblyInfo.cs
