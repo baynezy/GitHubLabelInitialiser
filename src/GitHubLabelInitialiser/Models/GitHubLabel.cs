@@ -1,17 +1,10 @@
-﻿using System;
-
-namespace GitHubLabelInitialiser.Models
+﻿namespace GitHubLabelInitialiser.Models
 {
 	/// <summary>
 	/// GitHub Issue Label
 	/// </summary>
 	public class GitHubLabel
 	{
-		/// <summary>
-		/// The Uri of the Label
-		/// </summary>
-		public Uri Url { get; set; }
-
 		/// <summary>
 		/// The Name of the label
 		/// </summary>
