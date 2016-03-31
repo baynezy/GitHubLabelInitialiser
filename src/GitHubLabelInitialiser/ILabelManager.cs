@@ -21,6 +21,6 @@ namespace GitHubLabelInitialiser
 		/// <param name="repositoryName">The name of the repository being operated on</param>
 		/// <param name="labels">A collection of GitHublabel to add to the repository</param>
 		/// <returns>The labels that have just been added</returns>
-		Task<IList<GitHubLabel>> AddLabelsToRepository(string username, string repositoryName, List<GitHubLabel> labels);
+		Task<IList<GitHubLabel>> AddLabelsToRepository(string username, string repositoryName, IList<GitHubLabel> labels);
 	}
 }
