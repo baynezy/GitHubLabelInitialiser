@@ -27,13 +27,13 @@ namespace GitHubLabelInitialiser
 				tasks[count++] = _gitHubApi.DeleteLabel(username, repositoryName, label);
 			}
 
-			Task.WaitAll(tasks);
+			await Task.WhenAll(tasks);
 
 			return labels;
 		}
 
 		#pragma warning disable 1998
-		public async Task<IList<GitHubLabel>> AddLabelsToRepository(string username, string repositoryName, List<GitHubLabel> labels)
+		public async Task<IList<GitHubLabel>> AddLabelsToRepository(string username, string repositoryName, IList<GitHubLabel> labels)
 		#pragma warning restore 1998
 		{
 			var tasks = new Task[labels.Count];
@@ -44,7 +44,7 @@ namespace GitHubLabelInitialiser
 				tasks[count++] = _gitHubApi.AddLabel(username, repositoryName, label);
 			}
 
-			Task.WaitAll(tasks);
+			await Task.WhenAll(tasks);
 
 			return labels;
 		}
