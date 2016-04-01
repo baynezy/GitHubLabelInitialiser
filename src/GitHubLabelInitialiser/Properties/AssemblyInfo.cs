@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("GitHubLabelInitialiser")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A .NET library for easily populating your GitHub repository with your bespoke labels")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Simon Baynes")]
 [assembly: AssemblyProduct("GitHubLabelInitialiser")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
