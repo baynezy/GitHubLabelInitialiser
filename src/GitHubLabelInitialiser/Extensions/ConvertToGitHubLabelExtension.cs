@@ -14,7 +14,6 @@ namespace GitHubLabelInitialiser.Extensions
 		{
 			return new GitHubLabel
 				{
-					Url = label.Url,
 					Name = label.Name,
 					Color = label.Color
 				};

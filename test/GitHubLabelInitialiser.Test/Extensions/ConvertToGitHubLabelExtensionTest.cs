@@ -19,17 +19,6 @@ namespace GitHubLabelInitialiser.Test.Extensions
 		}
 
 		[Test]
-		public void ConvertToGitHubLabel_WhenCalledOnLabel_ThenShouldCorrectlyPopulateUrlOnGitHubLabel()
-		{
-			const string uri = "http://some.uri/";
-			var label = new Label(new Uri(uri), "bug", "#ffffff");
-			var newLabel = label.ConvertToGitHubLabel();
-
-			Assert.That(newLabel.Url, Is.InstanceOf<Uri>());
-			Assert.That(newLabel.Url.ToString(), Is.EqualTo(uri));
-		}
-
-		[Test]
 		public void ConvertToGitHubLabel_WhenCalledOnLabel_ThenShouldCorrectlyPopulateNameOnGitHubLabel()
 		{
 			const string name = "bug";

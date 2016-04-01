@@ -48,5 +48,12 @@ namespace GitHubLabelInitialiser
 
 			return labels;
 		}
+
+		public async Task<IList<GitHubLabel>> IntialiseLabels(string username, string repositoryName, List<GitHubLabel> labels)
+		{
+			await DeleteAllInRepository(username, repositoryName);
+			await AddLabelsToRepository(username, repositoryName, labels);
+			return labels;
+		}
 	}
 }
