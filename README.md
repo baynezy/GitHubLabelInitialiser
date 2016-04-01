@@ -1,5 +1,5 @@
 # GitHubLabelInitialiser
-A .NET library for easily populating your repository with your bespoke labels
+A .NET library for easily populating your GitHub repository with your bespoke labels
 
 [![Stories in Ready](https://badge.waffle.io/baynezy/GitHubLabelInitialiser.svg?label=ready&title=Stories%20in%20Ready)](http://waffle.io/baynezy/GitHubLabelInitialiser)
 
