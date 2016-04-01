@@ -4,6 +4,10 @@ A .NET library for easily populating your repository with your bespoke labels
 ## Documentation
 Fully navigable documentation available on [GitHub Pages](http://baynezy.github.io/GitHubLabelInitialiser/)
 
+## Installing via NuGet
+
+    Install-Package GitHubLabelInitialiser
+
 ## Usage
 ### LabelManager.IntialiseLabels
 This method will do the following:-
