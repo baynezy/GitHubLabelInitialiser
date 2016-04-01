@@ -6,8 +6,8 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("GitHubLabelInitialiser")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyConfiguration("A .NET library for easily populating your GitHub repository with your bespoke labels")]
+[assembly: AssemblyCompany("Simon Baynes")]
 [assembly: AssemblyProduct("GitHubLabelInitialiser")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
