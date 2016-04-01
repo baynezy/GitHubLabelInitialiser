@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['documentation_2emd',['DOCUMENTATION.md',['../_d_o_c_u_m_e_n_t_a_t_i_o_n_8md.html',1,'']]]
+  ['githubapi_2ecs',['GitHubApi.cs',['../_git_hub_api_8cs.html',1,'']]],
+  ['githubcredentials_2ecs',['GitHubCredentials.cs',['../_git_hub_credentials_8cs.html',1,'']]],
+  ['githublabel_2ecs',['GitHubLabel.cs',['../_git_hub_label_8cs.html',1,'']]]
 ];

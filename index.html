@@ -80,8 +80,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">GitHub Label Initialiser Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>A .NET library for easily populating your repository with your bespoke labels</p>
-<h2>License</h2>
+<div class="textblock"><p>A .NET library for easily populating your GitHub repository with your bespoke labels</p>
+<h2>Documentation</h2>
+<p>Fully navigable documentation available on <a href="http://baynezy.github.io/GitHubLabelInitialiser/">GitHub Pages</a></p>
+<h2>Installing via NuGet</h2>
+<pre class="fragment">Install-Package GitHubLabelInitialiser
+</pre><h2>Usage</h2>
+<h3>LabelManager.IntialiseLabels</h3>
+<p>This method will do the following:-</p>
+<ol type="1">
+<li>Delete all the existing issue labels on a repository</li>
+<li>Add the collection of issue labels you pass it to the repository</li>
+</ol>
+<h4>Example</h4>
+<pre class="fragment">manager.IntialiseLabels(_username, _repositoryName, new List&lt;GitHubLabel&gt;
+                {
+                    new GitHubLabel{Name="bug", Color="ff0000"},
+                    new GitHubLabel{Name="feature", Color="fbca04"}
+                });
+</pre><h3>LabelManager.DeleteAllInRepository</h3>
+<p>This method will remove all the issue labels on a repository.</p>
+<h4>Example</h4>
+<pre class="fragment">manager.DeleteAllInRepository(_username, _repositoryName);
+</pre><h3>LabelManager.AddLabelsToRepository</h3>
+<p>This method will add new issue labels on the repository.</p>
+<h4>Example</h4>
+<pre class="fragment">manager.AddLabelsToRepository(_username, _repositoryName, new List&lt;GitHubLabel&gt;
+                {
+                    new GitHubLabel{Name="bug", Color="ff0000"},
+                    new GitHubLabel{Name="feature", Color="fbca04"}
+                });
+</pre><h2>License</h2>
 <p>This project is licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['githubapi_2ecs',['GitHubApi.cs',['../_git_hub_api_8cs.html',1,'']]],
-  ['githubcredentials_2ecs',['GitHubCredentials.cs',['../_git_hub_credentials_8cs.html',1,'']]],
-  ['githublabel_2ecs',['GitHubLabel.cs',['../_git_hub_label_8cs.html',1,'']]]
+  ['igithubapi_2ecs',['IGitHubApi.cs',['../_i_git_hub_api_8cs.html',1,'']]],
+  ['igithubcredentials_2ecs',['IGitHubCredentials.cs',['../_i_git_hub_credentials_8cs.html',1,'']]],
+  ['ilabelmanager_2ecs',['ILabelManager.cs',['../_i_label_manager_8cs.html',1,'']]]
 ];

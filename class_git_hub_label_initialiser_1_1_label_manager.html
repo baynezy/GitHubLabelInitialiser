@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a923f52cf9c3c47248897a6566fca69c3"><td class="memItemLeft" align="right" valign="top">async Task&lt; IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_git_hub_label_initialiser_1_1_label_manager.html#a923f52cf9c3c47248897a6566fca69c3">AddLabelsToRepository</a> (string username, string repositoryName, IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; labels)</td></tr>
 <tr class="memdesc:a923f52cf9c3c47248897a6566fca69c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a collection of GitHubLabel to a repository  <a href="#a923f52cf9c3c47248897a6566fca69c3">More...</a><br /></td></tr>
 <tr class="separator:a923f52cf9c3c47248897a6566fca69c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38423ec7900cb593a2029ebefac6fb5"><td class="memItemLeft" align="right" valign="top">async Task&lt; IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_git_hub_label_initialiser_1_1_label_manager.html#af38423ec7900cb593a2029ebefac6fb5">IntialiseLabels</a> (string username, string repositoryName, List&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; labels)</td></tr>
+<tr class="memdesc:af38423ec7900cb593a2029ebefac6fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all existing labels on the specified repository and replaces them with the ones suppled  <a href="#af38423ec7900cb593a2029ebefac6fb5">More...</a><br /></td></tr>
+<tr class="separator:af38423ec7900cb593a2029ebefac6fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The concrete implementation of <a class="el" href="interface_git_hub_label_initialiser_1_1_i_label_manager.html">ILabelManager</a> </p>
@@ -243,6 +246,59 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The labels that have just been removed</dd></dl>
 
 <p>Implements <a class="el" href="interface_git_hub_label_initialiser_1_1_i_label_manager.html#ab5b0abacdba973b39ace01f674a21095">GitHubLabelInitialiser.ILabelManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af38423ec7900cb593a2029ebefac6fb5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt;IList&lt;<a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a>&gt; &gt; GitHubLabelInitialiser.LabelManager.IntialiseLabels </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>repositoryName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt;&#160;</td>
+          <td class="paramname"><em>labels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes all existing labels on the specified repository and replaces them with the ones suppled </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Username of repository owner</td></tr>
+    <tr><td class="paramname">repositoryName</td><td>The name of the repository being operated on</td></tr>
+    <tr><td class="paramname">labels</td><td>A collection of GitHublabel to add to the repository</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The labels that have just been added</dd></dl>
+
+<p>Implements <a class="el" href="interface_git_hub_label_initialiser_1_1_i_label_manager.html#ab1437d182a834b242f8a0a8f5bba5282">GitHubLabelInitialiser.ILabelManager</a>.</p>
 
 </div>
 </div>
