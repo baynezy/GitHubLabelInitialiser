@@ -17,13 +17,13 @@ namespace GitHubLabelInitialiser
 		/// <summary>
 		/// New instance of GitHubApi
 		/// </summary>
-		/// <param name="gitHubCredentials">The IGitHubCredentials that are being used to authenticate with GitHub</param>
+		/// <param name="gitHubAccess">The IGitHubAccess that are being used to authenticate with GitHub</param>
 		/// <param name="appName">The name of your specific app</param>
-		public GitHubApi(IGitHubCredentials gitHubCredentials, string appName)
+		public GitHubApi(IGitHubAccess gitHubAccess, string appName)
 		{
 			_client = new GitHubClient(new ProductHeaderValue(appName))
 				{
-					Credentials = new Credentials(gitHubCredentials.Login, gitHubCredentials.Password)
+					Credentials = gitHubAccess.Credentials
 				};
 		}
 
