@@ -51,6 +51,7 @@
     <Compile Include="Models\GitHubCredentials.cs" />
     <Compile Include="Models\GitHubLabel.cs" />
     <Compile Include="IGitHubApi.cs" />
+    <Compile Include="Models\GitHubToken.cs" />
     <Compile Include="Models\IGitHubAccess.cs" />
     <Compile Include="ILabelManager.cs" />
     <Compile Include="LabelManager.cs" />
