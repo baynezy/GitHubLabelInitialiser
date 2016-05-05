@@ -57,6 +57,8 @@
     <Compile Include="Extensions\ConvertToGitHubLabelExtensionTest.cs" />
     <Compile Include="GitHubApiTest.cs" />
     <Compile Include="LabelManagerTest.cs" />
+    <Compile Include="Models\GitHubCredentialsTest.cs" />
+    <Compile Include="Models\GitHubTokenTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
