@@ -48,6 +48,11 @@ namespace GitHubLabelInitialiser
 			return label;
 		}
 
+		public Task<IList<GitHubRepository>> GetAllForAuthenticatedUser()
+		{
+			throw new System.NotImplementedException();
+		}
+
 		private static NewLabel CreateLabel(GitHubLabel label)
 		{
 			return new NewLabel(label.Name, label.Color);
