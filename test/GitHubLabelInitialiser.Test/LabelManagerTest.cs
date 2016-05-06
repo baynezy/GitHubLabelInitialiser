@@ -111,8 +111,6 @@ namespace GitHubLabelInitialiser.Test
 			api.Verify(f => f.AddLabel(_username, _repositoryName, It.IsAny<GitHubLabel>()), Times.Exactly(2));
 		}
 
-
-
 		private static ILabelManager CreateManager(IGitHubApi gitHubApi = null)
 		{
 			return new LabelManager(gitHubApi ?? new Mock<IGitHubApi>().Object);

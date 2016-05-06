@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\ConvertToGitHubLabelExtension.cs" />
+    <Compile Include="Extensions\ConvertToGitHubRepositoryExtension.cs" />
     <Compile Include="GitHubApi.cs" />
     <Compile Include="IRepositoryManager.cs" />
     <Compile Include="Models\GitHubCredentials.cs" />

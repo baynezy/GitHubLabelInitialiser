@@ -1,7 +1,11 @@
-﻿namespace GitHubLabelInitialiser
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using GitHubLabelInitialiser.Models;
+
+namespace GitHubLabelInitialiser
 {
 	public interface IRepositoryManager
 	{
-		void GetAllForAuthenticatedUser();
+		Task<IList<GitHubRepository>> GetAllForAuthenticatedUser();
 	}
 }
