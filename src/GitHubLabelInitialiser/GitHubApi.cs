@@ -48,6 +48,13 @@ namespace GitHubLabelInitialiser
 			return label;
 		}
 
+		public async Task<IList<GitHubRepository>> GetAllForAuthenticatedUser()
+		{
+			var repositories = await _client.Repository.GetAllForCurrent();
+
+			return repositories.Select(r => r.ConvertToGitHubRepository()).ToList();
+		}
+
 		private static NewLabel CreateLabel(GitHubLabel label)
 		{
 			return new NewLabel(label.Name, label.Color);

@@ -47,15 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\ConvertToGitHubLabelExtension.cs" />
+    <Compile Include="Extensions\ConvertToGitHubRepositoryExtension.cs" />
     <Compile Include="GitHubApi.cs" />
+    <Compile Include="IRepositoryManager.cs" />
     <Compile Include="Models\GitHubCredentials.cs" />
     <Compile Include="Models\GitHubLabel.cs" />
     <Compile Include="IGitHubApi.cs" />
+    <Compile Include="Models\GitHubRepository.cs" />
     <Compile Include="Models\GitHubToken.cs" />
     <Compile Include="Models\IGitHubAccess.cs" />
     <Compile Include="ILabelManager.cs" />
     <Compile Include="LabelManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
