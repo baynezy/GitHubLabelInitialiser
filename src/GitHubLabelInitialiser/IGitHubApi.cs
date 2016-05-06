@@ -34,5 +34,7 @@ namespace GitHubLabelInitialiser
 		/// <param name="label">The GitHubLabel that is to being added</param>
 		/// <returns>The GitHubLabel that was just added</returns>
 		Task<GitHubLabel> AddLabel(string username, string repositoryName, GitHubLabel label);
+
+		Task<IList<GitHubRepository>>  GetAllForAuthenticatedUser();
 	}
 }
