@@ -4,6 +4,9 @@ using GitHubLabelInitialiser.Models;
 
 namespace GitHubLabelInitialiser
 {
+	/// <summary>
+	/// A concrete implementation of IRepositoryManager
+	/// </summary>
 	public class RepositoryManager : IRepositoryManager
 	{
 		private readonly IGitHubApi _gitHubApi;
@@ -15,7 +18,7 @@ namespace GitHubLabelInitialiser
 
 		public Task<IList<GitHubRepository>> GetAllForAuthenticatedUser()
 		{
-			return _gitHubApi.GetAllForAuthenticatedUser();
+			return _gitHubApi.GetAllRepositoriesForAuthenticatedUser();
 		}
 	}
 }

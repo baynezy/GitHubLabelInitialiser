@@ -35,6 +35,10 @@ namespace GitHubLabelInitialiser
 		/// <returns>The GitHubLabel that was just added</returns>
 		Task<GitHubLabel> AddLabel(string username, string repositoryName, GitHubLabel label);
 
-		Task<IList<GitHubRepository>>  GetAllForAuthenticatedUser();
+		/// <summary>
+		/// Gets all the repositories for the authenticated GitHub user
+		/// </summary>
+		/// <returns>A collection of GitHubRepository for the authenticated</returns>
+		Task<IList<GitHubRepository>>  GetAllRepositoriesForAuthenticatedUser();
 	}
 }
