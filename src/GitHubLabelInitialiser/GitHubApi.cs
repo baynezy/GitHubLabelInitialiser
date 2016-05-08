@@ -48,7 +48,7 @@ namespace GitHubLabelInitialiser
 			return label;
 		}
 
-		public async Task<IList<GitHubRepository>> GetAllForAuthenticatedUser()
+		public async Task<IList<GitHubRepository>> GetAllRepositoriesForAuthenticatedUser()
 		{
 			var repositories = await _client.Repository.GetAllForCurrent();
 

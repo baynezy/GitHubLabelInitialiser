@@ -21,12 +21,12 @@ namespace GitHubLabelInitialiser.Test
 		public void GetAllForAuthenticatedUser_WhenCalled_ThenShouldCallIGitHubApiGetAllForAuthenticatedUser()
 		{
 			var api = new Mock<IGitHubApi>();
-			api.Setup(m => m.GetAllForAuthenticatedUser());
+			api.Setup(m => m.GetAllRepositoriesForAuthenticatedUser());
 			var manager = CreateManager(api.Object);
 
 			manager.GetAllForAuthenticatedUser();
 
-			api.Verify(f => f.GetAllForAuthenticatedUser(), Times.Once);
+			api.Verify(f => f.GetAllRepositoriesForAuthenticatedUser(), Times.Once);
 		}
 
 		[Test]
@@ -34,7 +34,7 @@ namespace GitHubLabelInitialiser.Test
 		{
 			var api = new Mock<IGitHubApi>();
 			var expectedRepo = new GitHubRepository {Name = "some-name"};
-			api.Setup(m => m.GetAllForAuthenticatedUser()).ReturnsAsync(new List<GitHubRepository>
+			api.Setup(m => m.GetAllRepositoriesForAuthenticatedUser()).ReturnsAsync(new List<GitHubRepository>
 				{
 					expectedRepo
 				});
