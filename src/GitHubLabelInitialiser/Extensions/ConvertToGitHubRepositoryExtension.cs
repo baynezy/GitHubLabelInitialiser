@@ -14,7 +14,8 @@ namespace GitHubLabelInitialiser.Extensions
 		{
 			return new GitHubRepository
 				{
-					Name = repository.Name
+					Name = repository.Name,
+					OwnerUsername = repository.Owner.Login
 				};
 		}
 	}
