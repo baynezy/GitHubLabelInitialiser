@@ -33,7 +33,12 @@ namespace GitHubLabelInitialiser.Test
 		public async Task GetAllForAuthenticatedUser_WhenCalled_ThenShouldReturnRepositoriesFromIGitHubApi()
 		{
 			var api = new Mock<IGitHubApi>();
-			var expectedRepo = new GitHubRepository {Name = "some-name"};
+			var expectedRepo = new GitHubRepository
+				{
+					Name = "some-name",
+					OwnerUsername = "baynezy"
+				};
+
 			api.Setup(m => m.GetAllRepositoriesForAuthenticatedUser()).ReturnsAsync(new List<GitHubRepository>
 				{
 					expectedRepo
