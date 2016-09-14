@@ -121,6 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af38423ec7900cb593a2029ebefac6fb5"><td class="memItemLeft" align="right" valign="top">async Task&lt; IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_git_hub_label_initialiser_1_1_label_manager.html#af38423ec7900cb593a2029ebefac6fb5">IntialiseLabels</a> (string username, string repositoryName, List&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; labels)</td></tr>
 <tr class="memdesc:af38423ec7900cb593a2029ebefac6fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all existing labels on the specified repository and replaces them with the ones suppled  <a href="#af38423ec7900cb593a2029ebefac6fb5">More...</a><br /></td></tr>
 <tr class="separator:af38423ec7900cb593a2029ebefac6fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929a0413cc3add19c5539be557fe298b"><td class="memItemLeft" align="right" valign="top">async Task&lt; IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_git_hub_label_initialiser_1_1_label_manager.html#a929a0413cc3add19c5539be557fe298b">GetLabelsForRepository</a> (string username, string repositoryName)</td></tr>
+<tr class="memdesc:a929a0413cc3add19c5539be557fe298b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all the labels for the repository  <a href="#a929a0413cc3add19c5539be557fe298b">More...</a><br /></td></tr>
+<tr class="separator:a929a0413cc3add19c5539be557fe298b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The concrete implementation of <a class="el" href="interface_git_hub_label_initialiser_1_1_i_label_manager.html">ILabelManager</a> </p>
@@ -246,6 +249,52 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The labels that have just been removed</dd></dl>
 
 <p>Implements <a class="el" href="interface_git_hub_label_initialiser_1_1_i_label_manager.html#ab5b0abacdba973b39ace01f674a21095">GitHubLabelInitialiser.ILabelManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a929a0413cc3add19c5539be557fe298b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt;IList&lt;<a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a>&gt; &gt; GitHubLabelInitialiser.LabelManager.GetLabelsForRepository </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>repositoryName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets all the labels for the repository </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Username of repository owner</td></tr>
+    <tr><td class="paramname">repositoryName</td><td>The name of the repository being operated on</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A collection of GitHubLabel for the repository</dd></dl>
+
+<p>Implements <a class="el" href="interface_git_hub_label_initialiser_1_1_i_label_manager.html#a4f8f6b4a6e532268f4bb22771c33b8ce">GitHubLabelInitialiser.ILabelManager</a>.</p>
 
 </div>
 </div>

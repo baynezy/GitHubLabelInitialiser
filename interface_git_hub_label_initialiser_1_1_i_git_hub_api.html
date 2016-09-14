@@ -122,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa6d1128d344c339904e2008ab7ee3c01"><td class="memItemLeft" align="right" valign="top">Task&lt; IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_repository.html">GitHubRepository</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_git_hub_label_initialiser_1_1_i_git_hub_api.html#aa6d1128d344c339904e2008ab7ee3c01">GetAllRepositoriesForAuthenticatedUser</a> ()</td></tr>
 <tr class="memdesc:aa6d1128d344c339904e2008ab7ee3c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all the repositories for the authenticated GitHub user  <a href="#aa6d1128d344c339904e2008ab7ee3c01">More...</a><br /></td></tr>
 <tr class="separator:aa6d1128d344c339904e2008ab7ee3c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4364252cdca7e5ed259658f819f8e825"><td class="memItemLeft" align="right" valign="top">Task&lt; IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_git_hub_label_initialiser_1_1_i_git_hub_api.html#a4364252cdca7e5ed259658f819f8e825">GetLabelsForRepository</a> (string username, string repositoryName)</td></tr>
+<tr class="memdesc:a4364252cdca7e5ed259658f819f8e825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all the labels for the repository  <a href="#a4364252cdca7e5ed259658f819f8e825">More...</a><br /></td></tr>
+<tr class="separator:a4364252cdca7e5ed259658f819f8e825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Connect to GitHub's API </p>
@@ -268,9 +271,47 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets all the repositories for the authenticated GitHub user </p>
-<dl class="section return"><dt>Returns</dt><dd>A collection of GitHubRepository for the authenticated</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A collection of GitHubRepository for the authenticated user</dd></dl>
 
 <p>Implemented in <a class="el" href="class_git_hub_label_initialiser_1_1_git_hub_api.html#a43d1ee1087b14fc0384a5db71eb542bd">GitHubLabelInitialiser.GitHubApi</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4364252cdca7e5ed259658f819f8e825"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;IList&lt;<a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a>&gt; &gt; GitHubLabelInitialiser.IGitHubApi.GetLabelsForRepository </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>repositoryName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets all the labels for the repository </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Username of repository owner</td></tr>
+    <tr><td class="paramname">repositoryName</td><td>The name of the repository being operated on</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A collection of GitHubLabel for the repository</dd></dl>
+
+<p>Implemented in <a class="el" href="class_git_hub_label_initialiser_1_1_git_hub_api.html#ad835f599cc9827e4d0cd810d0d6491c6">GitHubLabelInitialiser.GitHubApi</a>.</p>
 
 </div>
 </div>

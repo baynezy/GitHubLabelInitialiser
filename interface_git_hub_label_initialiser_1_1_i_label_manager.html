@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1437d182a834b242f8a0a8f5bba5282"><td class="memItemLeft" align="right" valign="top">Task&lt; IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_git_hub_label_initialiser_1_1_i_label_manager.html#ab1437d182a834b242f8a0a8f5bba5282">IntialiseLabels</a> (string username, string repositoryName, List&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; labels)</td></tr>
 <tr class="memdesc:ab1437d182a834b242f8a0a8f5bba5282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all existing labels on the specified repository and replaces them with the ones suppled  <a href="#ab1437d182a834b242f8a0a8f5bba5282">More...</a><br /></td></tr>
 <tr class="separator:ab1437d182a834b242f8a0a8f5bba5282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8f6b4a6e532268f4bb22771c33b8ce"><td class="memItemLeft" align="right" valign="top">Task&lt; IList&lt; <a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_git_hub_label_initialiser_1_1_i_label_manager.html#a4f8f6b4a6e532268f4bb22771c33b8ce">GetLabelsForRepository</a> (string username, string repositoryName)</td></tr>
+<tr class="memdesc:a4f8f6b4a6e532268f4bb22771c33b8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all the labels for the repository  <a href="#a4f8f6b4a6e532268f4bb22771c33b8ce">More...</a><br /></td></tr>
+<tr class="separator:a4f8f6b4a6e532268f4bb22771c33b8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad9c63b3234404522e3e3f5a0bdb19ae5"></a>
@@ -198,6 +201,44 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The labels that have just been removed</dd></dl>
 
 <p>Implemented in <a class="el" href="class_git_hub_label_initialiser_1_1_label_manager.html#a35431181624025de35521ebd7d5ce303">GitHubLabelInitialiser.LabelManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f8f6b4a6e532268f4bb22771c33b8ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;IList&lt;<a class="el" href="class_git_hub_label_initialiser_1_1_models_1_1_git_hub_label.html">GitHubLabel</a>&gt; &gt; GitHubLabelInitialiser.ILabelManager.GetLabelsForRepository </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>repositoryName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets all the labels for the repository </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Username of repository owner</td></tr>
+    <tr><td class="paramname">repositoryName</td><td>The name of the repository being operated on</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A collection of GitHubLabel for the repository</dd></dl>
+
+<p>Implemented in <a class="el" href="class_git_hub_label_initialiser_1_1_label_manager.html#a929a0413cc3add19c5539be557fe298b">GitHubLabelInitialiser.LabelManager</a>.</p>
 
 </div>
 </div>
