@@ -55,6 +55,13 @@ namespace GitHubLabelInitialiser
 			return repositories.Select(r => r.ConvertToGitHubRepository()).ToList();
 		}
 
+		public async Task<IList<GitHubLabel>> GetLabelsForRepository(string username, string repositoryName)
+		{
+			var labels = await _client.Issue.Labels.GetAllForRepository(username, repositoryName);
+
+			return labels.Select(l => l.ConvertToGitHubLabel()).ToList();
+		}
+
 		private static NewLabel CreateLabel(GitHubLabel label)
 		{
 			return new NewLabel(label.Name, label.Color);

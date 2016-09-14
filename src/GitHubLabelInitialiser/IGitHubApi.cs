@@ -38,7 +38,15 @@ namespace GitHubLabelInitialiser
 		/// <summary>
 		/// Gets all the repositories for the authenticated GitHub user
 		/// </summary>
-		/// <returns>A collection of GitHubRepository for the authenticated</returns>
+		/// <returns>A collection of GitHubRepository for the authenticated user</returns>
 		Task<IList<GitHubRepository>>  GetAllRepositoriesForAuthenticatedUser();
+
+		/// <summary>
+		/// Gets all the labels for the repository
+		/// </summary>
+		/// <param name="username">Username of repository owner</param>
+		/// <param name="repositoryName">The name of the repository being operated on</param>
+		/// <returns>A collection of GitHubLabel for the repository</returns>
+		Task<IList<GitHubLabel>>  GetLabelsForRepository(string username, string repositoryName);
 	}
 }
