@@ -111,6 +111,26 @@ namespace GitHubLabelInitialiser.Test
 			api.Verify(f => f.AddLabel(_username, _repositoryName, It.IsAny<GitHubLabel>()), Times.Exactly(2));
 		}
 
+		[Test]
+		public void
+			GetLabelsForRepository_WhenCalledWithUsernameAndRepositoryName_ThenShouldCallIGitHubApiGetLabelsForRepository()
+		{
+			var api = new Mock<IGitHubApi>();
+			api.Setup(m => m.GetLabelsForRepository(_username, _repositoryName)).ReturnsAsync(
+					new List<GitHubLabel>
+					{
+						new GitHubLabel(),
+						new GitHubLabel()
+					}
+				);
+
+			var manager = CreateManager(api.Object);
+
+			manager.GetLabelsForRepository(_username, _repositoryName);
+
+			api.Verify(f => f.GetLabelsForRepository(_username, _repositoryName), Times.Once);
+		}
+
 		private static ILabelManager CreateManager(IGitHubApi gitHubApi = null)
 		{
 			return new LabelManager(gitHubApi ?? new Mock<IGitHubApi>().Object);

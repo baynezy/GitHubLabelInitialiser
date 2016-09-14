@@ -55,5 +55,10 @@ namespace GitHubLabelInitialiser
 			await AddLabelsToRepository(username, repositoryName, labels);
 			return labels;
 		}
+
+		public async Task<IList<GitHubLabel>> GetLabelsForRepository(string username, string repositoryName)
+		{
+			return await _gitHubApi.GetLabelsForRepository(username, repositoryName);
+		}
 	}
 }
